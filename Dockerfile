@@ -8,6 +8,8 @@ RUN apk update && apk add varnish
 ENV VARNISH_PORT 80
 
 EXPOSE 80
+EXPOSE 6081
+EXPOSE 6082
 
 ADD start.sh /start.sh
 
